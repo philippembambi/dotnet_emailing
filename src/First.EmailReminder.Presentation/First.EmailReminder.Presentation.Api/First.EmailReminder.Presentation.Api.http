@@ -1,0 +1,6 @@
+@First.EmailReminder.Presentation.Api_HostAddress = http://localhost:5124
+
+GET {{First.EmailReminder.Presentation.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

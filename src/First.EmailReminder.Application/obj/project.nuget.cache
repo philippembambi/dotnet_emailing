@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "kEwcL4EaTxL8oKbktHV5jwiX2rUckPZFRyin9S2HMu6OEjvWToOn0ocXUnv3vTYtcR0L2SA9W8ZT7pM0XjlT2w==",
+  "success": true,
+  "projectFilePath": "/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Application/First.EmailReminder.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/techno243/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.1.1/fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/mediatr/8.0.0/mediatr.8.0.0.nupkg.sha512",
+    "/home/techno243/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/8.0.0/mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
+    "/home/techno243/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/techno243/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.1/microsoft.extensions.dependencyinjection.10.0.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.1/microsoft.extensions.dependencyinjection.abstractions.10.0.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/microsoft.extensions.logging/10.0.1/microsoft.extensions.logging.10.0.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.1/microsoft.extensions.logging.abstractions.10.0.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/microsoft.extensions.options/10.0.1/microsoft.extensions.options.10.0.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/microsoft.extensions.primitives/10.0.1/microsoft.extensions.primitives.10.0.1.nupkg.sha512",
+    "/home/techno243/.nuget/packages/system.diagnostics.diagnosticsource/10.0.1/system.diagnostics.diagnosticsource.10.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

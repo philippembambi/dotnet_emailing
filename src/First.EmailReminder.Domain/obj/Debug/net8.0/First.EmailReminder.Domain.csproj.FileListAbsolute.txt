@@ -1,0 +1,11 @@
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/bin/Debug/net8.0/First.EmailReminder.Domain.deps.json
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/bin/Debug/net8.0/First.EmailReminder.Domain.dll
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/bin/Debug/net8.0/First.EmailReminder.Domain.pdb
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/First.EmailReminder.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/First.EmailReminder.Domain.AssemblyInfoInputs.cache
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/First.EmailReminder.Domain.AssemblyInfo.cs
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/First.EmailReminder.Domain.csproj.CoreCompileInputs.cache
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/First.EmailReminder.Domain.dll
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/refint/First.EmailReminder.Domain.dll
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/First.EmailReminder.Domain.pdb
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/ref/First.EmailReminder.Domain.dll

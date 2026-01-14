@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "First.EmailReminder.Presentation.UI/1.0.0": {
+        "runtime": {
+          "First.EmailReminder.Presentation.UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "First.EmailReminder.Presentation.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

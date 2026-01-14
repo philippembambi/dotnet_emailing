@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MalpDYlUIwXoWmyzMX+FCSBAvb+zrBHrUz0Bz85xYnk=",
+  "Source": "First.EmailReminder.Presentation.Api",
+  "BasePath": "_content/First.EmailReminder.Presentation.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

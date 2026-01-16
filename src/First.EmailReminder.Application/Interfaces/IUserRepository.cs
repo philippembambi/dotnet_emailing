@@ -9,5 +9,6 @@ namespace First.EmailReminder.Application.Interfaces
     public interface IUserRepository : IGenericRepository<User>
     {
         Task<User> GetByEmailAsync(string email);
+        Task<bool> ExistsByEmailAsync(string email);
     }
 }

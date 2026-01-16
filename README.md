@@ -45,7 +45,7 @@
 
 ### 
 - dotnet ef migrations add RenamePasswordField -o Migrations
-- dotnet ef migrations add RenamePasswordToPasswordHash -o Migrations
+- dotnet ef migrations add AddSnakeCaseConfig -o Migrations
 - dotnet ef migrations add addRoleStringConversion -o Migrations
 - dotnet ef migrations add setDateOfBithToDateOnly -o Migrations
 

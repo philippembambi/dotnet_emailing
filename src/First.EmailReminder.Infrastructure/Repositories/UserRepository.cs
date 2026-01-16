@@ -15,6 +15,11 @@ namespace First.EmailReminder.Infrastructure.Repositories
         {
         }
 
+        public async Task<bool> ExistsByEmailAsync(string email)
+        {
+            return await _context.Users.AnyAsync(u => u.Email.ToLower() == email.ToLower());
+        }
+
         public async Task<User?> GetByEmailAsync(string email)
         {
             return await _context.Users

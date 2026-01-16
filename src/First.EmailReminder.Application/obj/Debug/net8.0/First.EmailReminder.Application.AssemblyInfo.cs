@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("First.EmailReminder.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd4f9b38ecb43206f87b334b66b9f183c939ff90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78816462bd643bf8ea4a4b9f1477138dcaa5c49f")]
 [assembly: System.Reflection.AssemblyProductAttribute("First.EmailReminder.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("First.EmailReminder.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

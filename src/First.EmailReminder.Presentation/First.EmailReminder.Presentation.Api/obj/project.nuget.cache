@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Go+gd/FXMJOq4lIFX8Dll6wrfJGxARQ1Rwb3lIYh4ePj/EPIzjstHFRuApzP4IdYaN9kGLC8dyzEcvmCJyIT8g==",
+  "dgSpecHash": "UF8CXZf8zvxFc7S+VlqVh6M3sZ7n+8R0DMJfCm1ZHBD1YCll/ziUlX2u6MGq7NwThVAVVfRlyo6bBzBwK2xwkA==",
   "success": true,
   "projectFilePath": "/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Presentation/First.EmailReminder.Presentation.Api/First.EmailReminder.Presentation.Api.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,7 @@
     "/home/techno243/.nuget/packages/microsoft.entityframeworkcore/8.0.7/microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
     "/home/techno243/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.7/microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
     "/home/techno243/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.7/microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512",
-    "/home/techno243/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.4/microsoft.entityframeworkcore.relational.8.0.4.nupkg.sha512",
+    "/home/techno243/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.7/microsoft.entityframeworkcore.relational.8.0.7.nupkg.sha512",
     "/home/techno243/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/techno243/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/home/techno243/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",

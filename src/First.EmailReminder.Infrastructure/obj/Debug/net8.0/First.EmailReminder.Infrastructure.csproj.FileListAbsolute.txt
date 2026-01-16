@@ -17,3 +17,4 @@
 /home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Infrastructure/obj/Debug/net8.0/First.EmailReminder.Infrastructure.pdb
 /home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Infrastructure/obj/Debug/net8.0/First.EmailReminder.Infrastructure.genruntimeconfig.cache
 /home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Infrastructure/obj/Debug/net8.0/ref/First.EmailReminder.Infrastructure.dll
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Infrastructure/obj/Debug/net8.0/First.EmailReminder.Infrastructure.sourcelink.json

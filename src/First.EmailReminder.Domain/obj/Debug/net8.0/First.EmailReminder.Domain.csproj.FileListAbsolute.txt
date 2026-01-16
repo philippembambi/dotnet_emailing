@@ -9,3 +9,4 @@
 /home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/refint/First.EmailReminder.Domain.dll
 /home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/First.EmailReminder.Domain.pdb
 /home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/ref/First.EmailReminder.Domain.dll
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Domain/obj/Debug/net8.0/First.EmailReminder.Domain.sourcelink.json

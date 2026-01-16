@@ -29,6 +29,7 @@ namespace First.EmailReminder.Infrastructure
             services.AddScoped<IReminderExecutionService, ReminderExecutionService>();
             services.AddScoped<IPasswordHasher, PasswordHasher>();
             services.AddScoped<IJwtService, JwtService>();
+            services.AddScoped<ISqlQueryService, SqlQueryService>();
 
             return services;
         }

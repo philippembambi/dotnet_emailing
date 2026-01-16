@@ -4067,6 +4067,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.7",
+      "Microsoft.EntityFrameworkCore.Relational >= 8.0.7",
       "Microsoft.Extensions.Hosting >= 10.0.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
       "System.IdentityModel.Tokens.Jwt >= 8.15.0"
@@ -4131,6 +4132,10 @@
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.7, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[8.0.7, )"
           },

@@ -92,3 +92,4 @@
 /home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Presentation/First.EmailReminder.Presentation.Api/obj/Debug/net8.0/First.EmailReminder.Presentation.Api.pdb
 /home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Presentation/First.EmailReminder.Presentation.Api/obj/Debug/net8.0/First.EmailReminder.Presentation.Api.genruntimeconfig.cache
 /home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Presentation/First.EmailReminder.Presentation.Api/obj/Debug/net8.0/ref/First.EmailReminder.Presentation.Api.dll
+/home/techno243/Documents/Costa Files/FisrtBank/First.EmailReminder/src/First.EmailReminder.Presentation/First.EmailReminder.Presentation.Api/obj/Debug/net8.0/First.EmailReminder.Presentation.Api.sourcelink.json

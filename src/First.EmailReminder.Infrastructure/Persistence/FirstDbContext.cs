@@ -16,5 +16,10 @@ namespace First.EmailReminder.Infrastructure.Persistence
         public DbSet<ReminderRule> ReminderRules { get; set; }
         public DbSet<Email> Emails { get; set; }
         public DbSet<User> Users { get; set; }
+
+        // protected override void OnModelCreating(ModelBuilder builder)
+        // {
+        //     builder.Entity<ReminderRule>().ToTable("");
+        // }
     }
 }

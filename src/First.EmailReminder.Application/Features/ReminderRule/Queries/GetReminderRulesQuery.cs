@@ -7,5 +7,5 @@ using MediatR;
 
 namespace First.EmailReminder.Application.Features.ReminderRule.Queries
 {
-    public record GetReminderRulesQuery(int Id) : IRequest<List<ReminderRuleDto>>;
+    public record GetReminderRulesQuery : IRequest<List<ReminderRuleDto>>;
 }

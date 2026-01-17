@@ -15,7 +15,6 @@ namespace First.EmailReminder.Application.Features.ReminderRule.Commands
         public int PeriodicityValue { get; set; }
         public string SubjectTemplate { get; set; } = string.Empty;
         public string BodyTemplate { get; set; } = string.Empty;
-        public string RecipientTemplate { get; set; } = string.Empty;
         public ReminderRuleStatus Status { get; set; }
         public int UserId { get; set; }
     }

@@ -11,13 +11,13 @@ namespace First.EmailReminder.Infrastructure.Service
     public class SchedulerService : ISchedulerService
     {
         //private readonly IReminderExecutionService _reminderExecutionService;
-        //private readonly IReminderRuleRepository _reminderRuleRepository;
+        private readonly IReminderRuleRepository _reminderRuleRepository;
         private readonly ILogger<SchedulerService> _logger;
 
-        public SchedulerService(ILogger<SchedulerService> logger)
+        public SchedulerService(ILogger<SchedulerService> logger, IReminderRuleRepository reminderRuleRepository)
         {
             //_reminderExecutionService = reminderExecutionService;
-            //_reminderRuleRepository = reminderRuleRepository;
+            _reminderRuleRepository = reminderRuleRepository;
             _logger = logger;
         }
 
@@ -43,26 +43,26 @@ namespace First.EmailReminder.Infrastructure.Service
         {
             _logger.LogInformation("Triggering due jobs at {CurrentTime}", currentTime);
 
-            // var dueRulesTask = await _reminderRuleRepository.GetDueRulesAllAsync(currentTime, cancellationToken);
-            // foreach (var reminderRule in dueRulesTask)
-            // {
-            //     try
-            //     {
-            //         if (reminderRule.IsDue(currentTime))
-            //         {
-            //             _logger.LogInformation("Executing reminder rule {ReminderRuleId}", reminderRule.Id);
-            //             //await _reminderExecutionService.ExecuteDueRemindersAsync(reminderRule, cancellationToken);
-            //
-            //             reminderRule.ScheduleNextRun();
-            //             reminderRule.UpdateNextRunAt(currentTime);
-            //             _logger.LogInformation("Reminder rule {ReminderRuleId} executed", reminderRule.Id);
-            //         }
-            //     }
-            //     catch (Exception ex)
-            //     {
-            //         _logger.LogError("Error executing reminder rule {ReminderRuleId} => {Exception}", reminderRule.Id, ex.Message);
-            //     }
-            // }
+            var dueRulesTask = await _reminderRuleRepository.GetDueRulesAllAsync(currentTime, cancellationToken);
+            
+            foreach (var reminderRule in dueRulesTask)
+            {
+                try
+                {
+                    if (reminderRule.IsDue(currentTime))
+                    {
+                        //await _reminderExecutionService.ExecuteDueRemindersAsync(reminderRule, cancellationToken);
+                        //reminderRule.ScheduleNextRun();
+                        //reminderRule.UpdateNextRunAt(currentTime);
+                        _logger.LogInformation("Reminder rule id {ReminderRuleId} executed", reminderRule.Id);
+                        _logger.LogInformation("Reminder rule sql {SqlQuery} executed", reminderRule.SqlQuery);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError("Error executing reminder rule {ReminderRuleId} => {Exception}", reminderRule.Id, ex.Message);
+                }
+            }
             // Implementation here
         }
     }

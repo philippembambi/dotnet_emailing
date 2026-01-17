@@ -7,6 +7,7 @@ using First.EmailReminder.Application.Dto;
 using First.EmailReminder.Application.Features.ReminderRule.Commands;
 using First.EmailReminder.Application.Interfaces;
 using MediatR;
+using Microsoft.Extensions.Logging;
 
 namespace First.EmailReminder.Application.Features.ReminderRule.Handlers
 {
@@ -14,11 +15,13 @@ namespace First.EmailReminder.Application.Features.ReminderRule.Handlers
     {
         public readonly ISqlQueryService _sqlQueryService;
         public readonly IMapper _mapper;
+        public readonly ILogger<ExecuteSqlQueryCommandHandler> _logger;
 
-        public ExecuteSqlQueryCommandHandler(ISqlQueryService sqlQueryService, IMapper mapper)
+        public ExecuteSqlQueryCommandHandler(ISqlQueryService sqlQueryService, IMapper mapper, ILogger<ExecuteSqlQueryCommandHandler> logger)
         {
             _sqlQueryService = sqlQueryService;
             _mapper = mapper;
+            _logger = logger;
         }
         public async Task<SqlQueryDto> Handle(ExecuteSqlQueryCommand request, CancellationToken cancellationToken)
         {

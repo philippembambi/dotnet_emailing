@@ -14,9 +14,9 @@ namespace First.EmailReminder.Domain.Entities
         public int PeriodicityValue { get; set; }
         public string SubjectTemplate { get; set; } = string.Empty;
         public string BodyTemplate { get; set; } = string.Empty;
-        public string RecipientTemplate { get; set; } = string.Empty; // Clob type
+        public string RecipientTemplate { get; set; } = "{}";
         public ReminderRuleStatus Status { get; set; }
-        public DateTime NextRunAt { get; set; }
+        public DateTime NextRunAt { get; set; } =  DateTime.UtcNow;
         public int UserId { get; set; }
         public User? User{ get; set; }
         public ICollection<Email> Emails { get; set; } = [];
@@ -114,8 +114,7 @@ namespace First.EmailReminder.Domain.Entities
         public bool HasValidTemplates()
         {
             return !string.IsNullOrWhiteSpace(SubjectTemplate) &&
-                   !string.IsNullOrWhiteSpace(BodyTemplate) &&
-                   !string.IsNullOrWhiteSpace(RecipientTemplate);
+                   !string.IsNullOrWhiteSpace(BodyTemplate);
         }
         public bool HasValidPlaceholders()
         {
@@ -123,8 +122,7 @@ namespace First.EmailReminder.Domain.Entities
 
             return requiredPlaceholders.All(placeholder =>
                 SubjectTemplate.Contains(placeholder) ||
-                BodyTemplate.Contains(placeholder) ||
-                RecipientTemplate.Contains(placeholder));
+                BodyTemplate.Contains(placeholder));
         }
         public bool IsSafeContent()
         {

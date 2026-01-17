@@ -44,9 +44,8 @@
 - dotnet ef database update
 
 ### 
-- dotnet ef migrations add RenamePasswordField -o Migrations
 - dotnet ef migrations add AddSnakeCaseConfig -o Migrations
-- dotnet ef migrations add addRoleStringConversion -o Migrations
+- dotnet ef migrations add changeReminderRuleRecipientsFormat -o Migrations
 - dotnet ef migrations add setDateOfBithToDateOnly -o Migrations
 
 ### Use npm defined version

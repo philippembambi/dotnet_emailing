@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using First.EmailReminder.Application.Interfaces;
 using First.EmailReminder.Domain.Entities;
+using First.EmailReminder.Domain.Enums;
 using First.EmailReminder.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,7 +24,7 @@ namespace First.EmailReminder.Infrastructure.Repositories
         public async Task<List<ReminderRule>> GetDueRulesAllAsync(DateTime currentTime, CancellationToken cancellationToken)
         {
             return await _context.ReminderRules
-                .Where(r => r.NextRunAt <= currentTime && r.IsActive())
+                .Where(r => r.NextRunAt <= currentTime && r.Status == ReminderRuleStatus.Active)
                 .ToListAsync(cancellationToken);
         }
     }

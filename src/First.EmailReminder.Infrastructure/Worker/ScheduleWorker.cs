@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using First.EmailReminder.Application.Interfaces;
 using First.EmailReminder.Infrastructure.Service;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -13,11 +14,12 @@ namespace First.EmailReminder.Infrastructure.Worker
     {
         //private readonly ISchedulerService _schedulerService;
         private readonly ILogger<ScheduleWorker> _logger;
+        private readonly IServiceScopeFactory _serviceScopeFactory;
 
-        public ScheduleWorker(ILogger<ScheduleWorker> logger)
+        public ScheduleWorker(ILogger<ScheduleWorker> logger, IServiceScopeFactory serviceScopeFactory)
         {
-            //_schedulerService = schedulerService;
             _logger = logger;
+            _serviceScopeFactory = serviceScopeFactory;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -26,44 +28,20 @@ namespace First.EmailReminder.Infrastructure.Worker
 
             while(!stoppingToken.IsCancellationRequested)
             {
-                _logger.LogInformation("Hello at {time}", DateTimeOffset.Now);
-                await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
+                try
+                {
+                    using var scope = _serviceScopeFactory.CreateScope();
+                    var schedulerService = scope.ServiceProvider.GetRequiredService<ISchedulerService>();
+                    await schedulerService.TriggerDueJobsAsync(DateTime.UtcNow, stoppingToken);
+                    //  _logger.LogInformation("Hello at {time}", DateTimeOffset.Now);     
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Error occured while executing scheduler worker");
+                }
+               await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
             }
             _logger.LogInformation("Schedule Worker stopping at: {time}", DateTimeOffset.Now);
-            
-
-            // while (!stoppingToken.IsCancellationRequested)
-            // {
-            //     try
-            //     {
-            //         var currentTime = DateTime.UtcNow;
-            //         _logger.LogInformation("Checking for due jobs at: {time}", currentTime);
-            //         await _schedulerService.TriggerDueJobsAsync(currentTime, stoppingToken);
-            //     }
-            //     catch (Exception ex)
-            //     {
-            //         _logger.LogError("Error occurred while triggering due jobs => {ErrorMessage}", ex.Message);
-            //     }
-            //     await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken); // Check every minute
-            // }
         }
-        // return Task.Run(async () =>
-        // {
-        //     while (!stoppingToken.IsCancellationRequested)
-        //     {
-        //         try
-        //         {
-        //             var currentTime = DateTime.UtcNow;
-        //             _logger.LogInformation("Checking for due jobs at: {time}", currentTime);
-        //             await _schedulerService.TriggerDueJobsAsync(currentTime, stoppingToken);
-        //         }
-        //         catch (Exception ex)
-        //         {
-        //             _logger.LogError(ex, "Error occurred while triggering due jobs.");
-        //         }
-
-        //         await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken); // Check every minute
-        //     }
-        // }, stoppingToken);
     }
 }

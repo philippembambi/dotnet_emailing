@@ -13,12 +13,14 @@ namespace First.EmailReminder.Application.Features.Email.Handlers
     public class CreateEmailCommandHandler : IRequestHandler<CreateEmailCommand, EmailDto>
     {
         public readonly IEmailRepository _emailRepository;
+        public readonly IReminderRuleRepository _reminderRuleRepository;
         public readonly IMapper _mapper;
 
-        public CreateEmailCommandHandler(IEmailRepository emailRepository, IMapper mapper)
+        public CreateEmailCommandHandler(IEmailRepository emailRepository, IMapper mapper, IReminderRuleRepository reminderRuleRepository)
         {
             _emailRepository = emailRepository;
             _mapper = mapper;
+            _reminderRuleRepository = reminderRuleRepository;
         }
 
         public async Task<EmailDto> Handle(CreateEmailCommand request, CancellationToken cancellationToken)
